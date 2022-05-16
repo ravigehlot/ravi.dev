@@ -1,6 +1,7 @@
 /* Theme */
 
-main {
+main,
+footer {
 	background: #EDEDED;
 	color: #AF3D4E;
 }
@@ -9,6 +10,6 @@ main {
 	color: #AF3D4E;
 }
 
-.icons-social a svg path{
+.icons-social a svg path {
 	fill: #AF3D4E;
 }

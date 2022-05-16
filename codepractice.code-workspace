@@ -1,0 +1,45 @@
+{
+  "folders": [
+    {
+      "name": "code-practice",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.editor.showTabs": true,
+    "workbench.sideBar.location": "right",
+    "explorer.compactFolders": false,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 18,
+    "editor.formatOnSave": true,
+    "editor.renderWhitespace": "selection",
+    "editor.snippetSuggestions": "top",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": true
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.showExpandedAbbreviation": "always",
+    "search.exclude": {
+      "**/.git": true,
+      "**/node_modules": true,
+      "**/dist": true
+    },
+    "git.autofetch": true,
+    "git.enabled": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 100,
+    "files.exclude": {
+      "**/.git/": true,
+    },
+    "typescript.validate.enable": false,
+    "javascript.validate.enable": true,
+    "css.lint.unknownAtRules": "ignore",
+    "css.validate": false,
+    "npm.autoDetect": "on",
+  }
+}
