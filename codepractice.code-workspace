@@ -41,5 +41,10 @@
     "css.lint.unknownAtRules": "ignore",
     "css.validate": false,
     "npm.autoDetect": "on",
+    "grammarly.files.include": [
+      "**/README.md",
+      "**/readme.md",
+      "**/*.txt"
+    ]
   }
 }

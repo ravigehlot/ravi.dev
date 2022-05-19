@@ -1,25 +1,45 @@
 # My Landing Page
 
-Welcome to my personal website.
+Welcome to the repository for my website.
 
 It is a work in progress.
 
-I created my personal web page to showcase what I do working as a Web Developer and introduce myself.
+I created my web page to showcase what I do working as a Web Developer and to introduce myself.
 
-So I sat down one night and created this **ravi.net**. Feel free to fork, clone, play around and make this your own.
+So I sat down one night and created this **ravi.dev**. Feel free to fork, clone, play around and make this your own.
 
-## Themes
+Proudly deployed with [![Netlify
+		Status](https://api.netlify.com/api/v1/badges/e02c09a3-7e32-4081-8af3-51fa9ada9339/deploy-status)](https://app.netlify.com/sites/spiffy-pavlova-6e9563/deploys)
 
-Dev Landing Page comes in 9 **material themes**.
+## Prerequisites
 
-![9 Material Themes](https://image.ibb.co/jJVKCn/dev_landing_page_themes.jpg)
+|     | Install | Version Tested |
+| --- | ------- | -------------- |
+| 1   | nodejs  | 14.18.0        |
+| 2   | npm     | 8.9.0          |
 
-If none of these themes fit within your taste, it's quite easy to customize and create your own too. 
+## Optional Tooling
 
-## Netlify
+|     | Install |
+| --- | ------- |
+| 1   | VSCode  |
 
-Deploy quickly and free with netlify.com.
+    code codepractice.code-workspace
+
+## Install NPM packages
+
+    npm i
+
+## Development Environment
+
+    npm run build:dev
+
+## Production Environment
+
+    npm run build:prod
+
+---
 
 ## License
 
-MIT © Ravi Gehlot
+*MIT © Ravi Gehlot*

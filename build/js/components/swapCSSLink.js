@@ -1,3 +1,5 @@
+import createNewNodeLink from '../utils/createNode';
+
 function swapCSSLink() {
     const cssPath = 'css/themes';
 

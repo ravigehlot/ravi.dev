@@ -24,7 +24,6 @@
     "email": "ravi@gehlot.net",
     "url": "https://www.ravi.dev/"
   },
-  "license": "MIT",
   "scripts": {
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development --node-env=development",
@@ -34,6 +33,8 @@
     "@babel/core": "^7.15.8",
     "@babel/plugin-transform-modules-commonjs": "^7.15.4",
     "@babel/preset-env": "^7.15.8",
+    "babel-loader": "^8.2.3",
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
     "mini-css-extract-plugin": "^2.6.0",
     "sass": "^1.51.0",
@@ -45,5 +46,6 @@
   },
   "bugs": {
     "url": "https://github.com/ravigehlot/ravi.dev/issues"
-  }
+  },
+  "license": "MIT"
 }

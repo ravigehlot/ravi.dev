@@ -1,32 +1,49 @@
 const path = require('path');
+const CopyPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+const mode = process.env.NODE_ENV || 'development';
+
 module.exports = {
-    mode: 'production',
+    mode: mode,
     entry: './build/index.js',
     output: {
-        filename: 'index.js',
+        filename: 'public/index.js',
         path: path.resolve(__dirname, '.'),
     },
     module: {
         rules: [
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.js?$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        cacheDirectory: true,
+                    },
+                },
+            },
+            {
+                test: /\.s?[ac]ss$/i,
                 use: [
-                    MiniCssExtractPlugin.loader,
-                    //"style-loader",
-                    // Translates CSS into CommonJS
-                    "css-loader",
-                    // Compiles Sass to CSS
-                    "sass-loader",
+                    mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
+                    'css-loader',
+                    'sass-loader',
                 ],
             },
         ],
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'css/styles.css',
+            filename: 'public/css/[name].css',
             chunkFilename: '[name].css'
+        }),
+        new CopyPlugin({
+            patterns: [
+                { from: 'build/index.html', to: 'public/index.html' },
+                { from: 'build/css/themes/', to: 'public/css/themes/' },
+                { from: 'build/img/', to: 'public/img/' },
+            ],
         }),
     ],
 };
