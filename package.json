@@ -29,10 +29,9 @@
     "build:dev": "webpack --mode=development --node-env=development",
     "build:prod": "webpack --mode=production --node-env=production"
   },
-  "dependencies": {
-    "@netlify/plugin-a11y": "^1.0.0-alpha.6"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@netlify/plugin-a11y": "^1.0.0-alpha.6",
     "@babel/core": "^7.15.8",
     "@babel/plugin-transform-modules-commonjs": "^7.15.4",
     "@babel/preset-env": "^7.15.8",
