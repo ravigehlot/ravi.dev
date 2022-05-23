@@ -20,9 +20,10 @@ Proudly deployed with [![Netlify
 
 ## Optional Tooling
 
-|     | Install |
-| --- | ------- |
-| 1   | VSCode  |
+|     | Install     |
+| --- | ----------- |
+| 1   | VSCode      |
+| 1   | Netlify CLI |
 
     code codepractice.code-workspace
 

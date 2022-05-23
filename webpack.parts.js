@@ -12,7 +12,7 @@ exports.settings = ({ options = {}, loaders = [] } = {}) => {
     return {
         mode: mode,
         entry: {
-            main: './build/index.js',
+            index: './build/index.js',
             404: './build/404.js',
         },
         output: {
