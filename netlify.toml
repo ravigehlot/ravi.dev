@@ -8,7 +8,7 @@
     # Perform a11y check against WCAG 2.1 AAA
     wcagLevel = 'WCAG2AAA'
 
-[context.development]
+[context.deploy-preview]
 publish = "public/"
 command = "npm run build:dev"
 environment = { NODE_VERSION = "14.19.3" }
