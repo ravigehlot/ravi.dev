@@ -13,33 +13,49 @@ Proudly deployed with [![Netlify
 
 ## Prerequisites
 
-|     | Install | Version Tested |
-| --- | ------- | -------------- |
-| 1   | nodejs  | 14.18.0        |
-| 2   | npm     | 8.9.0          |
+|      | Install |
+| --- | -------  |
+| 1   | NodeJS |
+| 2   | npm    |
 
 ## Optional Tooling
 
 |     | Install     |
 | --- | ----------- |
 | 1   | VSCode      |
-| 1   | Netlify CLI |
+| 2   | Netlify CLI |
+| 2   | GitHub CLI |
 
     code codepractice.code-workspace
 
 ## Install NPM packages
-
+```
     npm i
+```
 
 ## Development Environment
-
+```
     npm run build:dev
+```
 
 ## Production Environment
+```
+   npm run build:prod
+```
 
-    npm run build:prod
+## Netlify build the production preview
+```
+    netlify deploy --build --context production
+```
 
----
+## Netlify deploy to production
+```
+    netlify deploy --build --prod
+```
+## Netlify deployment preview
+```
+    netlify deploy --build --context deploy-preview
+```
 
 ## License
 
