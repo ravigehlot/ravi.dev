@@ -8,12 +8,12 @@
 
 [context.production]
   publish = "public/"
-  command = "npm run build:dev"
+  command = "rm -rf dist && mkdir dist && rsync -rv * dist --exclude ./public && npm run build:dev"
   environment = { NODE_VERSION = "14.19.3" }
 
 [context.deploy-preview]
   publish = "preview/"
-  command = "npm run build:dev"
+  command = "rm -rf dist && mkdir dist && rsync -rv * dist --exclude ./public && npm run build:dev"
   environment = { NODE_VERSION = "14.19.3" }
 
 [functions]
