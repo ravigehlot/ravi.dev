@@ -4,7 +4,7 @@
   # If not set, defaults to the root directory.
   base = "./"
   publish = "public/"
-  command = "npm run build'"
+  command = "npm i'"
   skip_processing = true
 
 [context.production]
