@@ -1,9 +1,25 @@
+[build]
+  # Directory to change to before starting a build.
+  # This is where we will look for package.json/.nvmrc/etc.
+  # If not set, defaults to the root directory.
+  base = "./"
+  publish = "public/"
+  command = "npm run build'"
+  skip_processing = true
+
 [context.production]
-publish = "public/"
-command = "npm run build"
-environment = { NODE_VERSION = "14.19.3" }
+  publish = "public/"
+  command = "npm run build"
+  environment = { NODE_VERSION = "14.19.3" }
 
 [context.deploy-preview]
-publish = "public/"
-command = "npm run build"
-environment = { NODE_VERSION = "14.19.3" }
+  publish = "preview/"
+  command = "npm run build:dev"
+  environment = { NODE_VERSION = "14.19.3" }
+
+[functions]
+  # Directory with serverless functions, including background
+  # functions, to deploy. This is relative to the base directory
+  # if one has been set, or the root directory if
+  # a base hasn’t been set.
+  directory = "netlify/functions/"
