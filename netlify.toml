@@ -8,7 +8,7 @@
 
 [context.production]
   publish = "public/"
-  command = "npm i && npm run build"
+  command = "npm run build:dev"
   environment = { NODE_VERSION = "14.19.3" }
 
 [context.deploy-preview]
