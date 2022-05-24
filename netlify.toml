@@ -8,12 +8,12 @@
 
 [context.production]
   publish = "public/"
-  command = "npm i && rm -rf public && mkdir public && rsync -rv ./node_modules ./public --exclude ./public && npm run build:dev"
-  environment = { NODE_ENV = "production", NODE_VERSION = "14.19.3" }
+  command = "rm -rf public && mkdir public && rsync -rv ./node_modules ./public --exclude ./public && npm run build:dev"
+  environment = { NODE_ENV = "development", NODE_VERSION = "14.19.3" }
 
 [context.deploy-preview]
   publish = "preview/"
-  command = "npm i && rm -rf public && mkdir public && rsync -rv ./node_modules ./public --exclude ./public && npm run build:dev"
+  command = "rm -rf public && mkdir public && rsync -rv ./node_modules ./public --exclude ./public && npm run build:dev"
   environment = { NODE_ENV = "development", NODE_VERSION = "14.19.3" }
 
 [functions]
