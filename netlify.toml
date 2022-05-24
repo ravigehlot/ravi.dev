@@ -1,13 +1,3 @@
-[[plugins]]
-  package = "@netlify/plugin-a11y"
-  [plugins.inputs]
-    # Check all HTML files in this project (the default behavior)
-    checkPaths = ['/']
-    # Do not fail the build if a11y issues are found
-    failWithIssues = false
-    # Perform a11y check against WCAG 2.1 AAA
-    wcagLevel = 'WCAG2AAA'
-
 [context.deploy-preview]
 publish = "public/"
 command = "npm run build"
