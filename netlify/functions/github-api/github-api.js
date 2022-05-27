@@ -1,17 +1,13 @@
-const handler = async (event) => {
-  try {
-    await octokit;
+import { Octokit } from "https://cdn.skypack.dev/octokit?dts";
 
-    return {
-      // Octokit.js
-      // https://github.com/octokit/core.js#readme
-      octokit: new Octokit({
-        auth: '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'
-      }).request('GET /user', {})
-    }
-  } catch (error) {
-    return { statusCode: 500, body: error.toString() }
-  }
+const handler = async (event) => {
+  const octokit = new Octokit({
+    auth: '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'
+  })
+
+  let result = await octokit.request('GET /user', {})
+
+  return result;
 }
 
 module.exports = { handler }
