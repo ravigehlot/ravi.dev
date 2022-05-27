@@ -1,13 +1,22 @@
-import { Octokit, App } from "octokit";
+const { Octokit } = require("octokit");
+require('dotenv').config()
 
+module.exports = { handler }
 const handler = async (event) => {
-  const octokit = new Octokit({
-    auth: 'ravigehlot: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'
-  })
+  try {
+    const octokit = new Octokit({
+      auth: process.env.MONGODB_ATLAS
+    });
 
-  let result = await octokit.request('GET /users/ravigehlot', {})
+    let result = await octokit.request('GET /user', {});
 
-  return result;
+    return {
+      statusCode: 200,
+      body: JSON.stringify(result),
+    }
+  } catch (error) {
+    return { statusCode: 500, body: error.toString() }
+  }
 }
 
 module.exports = { handler }

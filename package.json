@@ -4,16 +4,6 @@
   "description": "Ravi Gehlot is a Full Stack Developer in Sarasota, Florida, specializing in PHP, JavaScript, CSS, HTML, Laravel, SCSS, ReactJS, REST API, etc.",
   "main": "./build/index.js",
   "private": true,
-  "keywords": [
-    "PHP",
-    "JavaScript",
-    "CSS",
-    "HTML",
-    "Laravel",
-    "SCSS",
-    "ReactJS",
-    "REST API"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ravigehlot/ravi.dev.git"
@@ -30,6 +20,7 @@
     "build:prod": "webpack --mode=production --node-env=production"
   },
   "dependencies": {
+    "dotenv": "^16.0.1",
     "octokit": "^1.7.1"
   },
   "devDependencies": {
@@ -40,7 +31,6 @@
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
-    "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.0",
     "sass": "^1.51.0",
     "sass-loader": "^13.0.0",

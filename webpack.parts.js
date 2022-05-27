@@ -1,9 +1,12 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const path = require('path');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const webpack = require('webpack');
+const dotenv = require('dotenv')
+
+dotenv.config({ path: './.env' });
 
 const mode = process.env.NODE_ENV || 'development';
 
@@ -19,6 +22,11 @@ exports.settings = ({ options = {}, loaders = [] } = {}) => {
             filename: '[name].js',
             path: path.resolve(__dirname, 'public'),
         },
+        plugins: [
+            new webpack.DefinePlugin({
+                "process.env": JSON.stringify(dotenv.config().parsed),
+            }),
+        ],
     };
 }
 

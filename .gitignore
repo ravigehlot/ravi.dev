@@ -1,5 +1,8 @@
 node_modules/
 public/
+
 # Local Netlify folder
 .netlify/
 
+# Local dotenv
+.env
