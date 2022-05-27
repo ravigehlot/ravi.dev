@@ -2,7 +2,7 @@ import { Octokit, App } from "octokit";
 
 const handler = async (event) => {
   const octokit = new Octokit({
-    auth: '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'
+    auth: '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'
   })
 
   let result = await octokit.request('GET /user', {})
