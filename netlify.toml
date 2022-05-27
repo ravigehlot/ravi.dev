@@ -20,3 +20,5 @@ NPM_VERSION = "6.14.17"
 # if one has been set, or the root directory if
 # a base hasn’t been set.
 directory = "netlify/functions/"
+[functions."github-api"]
+schedule = "@daily"
