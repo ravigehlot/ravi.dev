@@ -24,7 +24,8 @@ Proudly deployed with [![Netlify
 | --- | ----------- |
 | 1   | VSCode      |
 | 2   | Netlify CLI |
-| 2   | GitHub CLI |
+| 3  | GitHub CLI |
+| 4  | Cloudflare CLI |
 
     code codepractice.code-workspace
 
