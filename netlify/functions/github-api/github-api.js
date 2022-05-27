@@ -1,4 +1,4 @@
-import { Octokit } from "https://cdn.skypack.dev/octokit?dts";
+import { Octokit } from "https://cdn.skypack.dev/octokit";
 
 const handler = async (event) => {
   const octokit = new Octokit({
