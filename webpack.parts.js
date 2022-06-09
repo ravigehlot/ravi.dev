@@ -85,6 +85,8 @@ exports.copy = ({ options = {}, loaders = [] } = {}) => {
                 patterns: [
                     { from: 'build/index.html', to: 'index.html' },
                     { from: 'build/404.html', to: '404.html' },
+                    { from: 'build/sitemap.xml', to: 'sitemap.xml' },
+                    { from: 'build/robots.txt', to: 'robots.txt' },
                     { from: 'build/css/themes/', to: 'css/themes/' },
                     { from: 'build/img/', to: 'img/' },
                 ],
