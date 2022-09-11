@@ -6,3 +6,6 @@ public/
 
 # Local dotenv
 .env
+
+# Mac OS
+.DS_Store
