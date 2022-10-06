@@ -21,6 +21,8 @@
       "comments": true,
       "strings": true
     },
+    "terminal.integrated.fontFamily": "monospace",
+    "terminal.integrated.fontSize": 16,
     "emmet.triggerExpansionOnTab": true,
     "emmet.showSuggestionsAsSnippets": true,
     "emmet.showExpandedAbbreviation": "always",
