@@ -1,0 +1,12 @@
+services:
+  www:
+    container_name: nginx
+    image: nginx:latest
+    ports:
+      - "80:80"
+    network:
+      appnet:
+
+networks:
+  appnet:
+      
